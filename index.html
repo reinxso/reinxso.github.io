@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Gato Signals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('Forex.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 111vh;
+        }
+
+        .content-wrapper {
+            flex: 1;
+            /* Aprovecha el espacio restante */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.925);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.767);
+            border: 3px solid #ff5e00;
+            max-width: 600px;
+            z-index: 1;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .container img.logo {
+            max-width: 200px;
+        }
+
+        .container h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            line-height: 1.2;
+        }
+
+        .container h1 span {
+            color: #ff5e00;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            font-size: 18px;
+            color: #fff;
+            background: linear-gradient(45deg, #c5a100, #ff5e00);
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+            overflow: hidden;
+            animation: heartbeat 1.5s infinite;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+        }
+
+        .btn svg {
+            margin-right: 7px;
+            /* Espacio entre el icono y el texto */
+            margin-left: -5px;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); /* Sombra para el icono */
+        }
+
+        .footer {
+            background-color: black;
+            color: #444;
+            text-align: center;
+            padding: 10px;
+            z-index: 2;
+            position: relative;
+            margin-top: 40px;
+            /* Ajusta el espacio entre contenido y footer */
+        }
+
+        .footer p {
+            margin: 5px 0;
+            font-size: 12px;
+        }
+
+        img[src="forex.jpg"] {
+            display: none;
+        }
+
+        @keyframes heartbeat {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .store-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .store-buttons a {
+            display: inline-block;
+            margin: 0 10px;
+            /* Espacio entre las imágenes */
+        }
+
+        .store-buttons img {
+            width: auto;
+            max-height: 80px;
+            /* Altura máxima para mantener proporciones */
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .store-buttons img:hover {
+            transform: scale(1.1);
+            /* Agrandar un poco */
+        }
+
+        @media (max-width: 768px) {
+            .container h1 {
+                font-size: 20px;
+            }
+
+            .btn {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+
+            .store-buttons img {
+                max-height: 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            .container h1 {
+                font-size: 18px;
+            }
+
+            .btn {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+
+            .store-buttons img {
+                max-height: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>¡Haz clic en el botón de abajo y recibe<br>tu acceso inmediato a mi <span>grupo gratuito de
+                    Telegram</span>!</h1>
+            <a href="https://t.me/elgatotrading" class="btn" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-telegram" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
+                </svg>
+                ¡QUIERO UNIRME YA!
+            </a>
+            <p>¿No tienes Telegram?<br>¡Descárgalo en los botones de abajo!</p>
+            <div class="store-buttons">
+                <a href="https://apps.apple.com/es/app/telegram-messenger/id686449807" target="_blank"><img src="5.png"
+                        alt="Disponible en App Store"></a>
+                <a href="https://play.google.com/store/apps/details?id=org.telegram.messenger&hl=es_VE"
+                    target="_blank"><img src="3.png" alt="Disponible en Google Play"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 El Gato Trader. Todos los derechos reservados. <br>
+        ATENCIÓN: Las ventas de nuestros productos se realizan exclusivamente a través de mi telegram @reinxso <br>
+        TENGA EN CUENTA: Este sitio web no está afiliado a Facebook ni a ninguna entidad de Facebook. Una vez que
+            sales de Facebook, no es su responsabilidad, es de nuestro sitio web. <br> Hacemos todo lo posible para indicar y
+            mostrar claramente todas las pruebas de productos y utilizar resultados reales. Si tiene alguna pregunta,
+            no dude en utilizar el enlace de contacto y comunicarse con nosotros.</p>
+    </div>
+</body>
+
+</html>
